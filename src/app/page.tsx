@@ -105,9 +105,9 @@ export default function ChooserPage() {
           bullets={[
             "Framer Motion scroll-linked transforms",
             "Hero video · horizontal classes · CTA",
-            "Neon-green accent, Space Grotesk display",
+            "Brand orange accent, Space Grotesk display",
           ]}
-          accent="#c6ff00"
+          accent="#ff6b00"
         />
       </section>
 

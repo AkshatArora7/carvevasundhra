@@ -20,70 +20,70 @@ const CLASSES: ClassCard[] = [
     title: "Iron Forged",
     subtitle: "Powerlifting · Olympic · Hypertrophy",
     bullets: [
-      "Coached compound lifts",
-      "Periodised 12-week blocks",
-      "Open rack floor 24/7",
+      "Coach-led compound lifts — squat, bench, deadlift, clean",
+      "Periodised 12-week strength blocks with weekly check-ins",
+      "Open rack floor 24/7 with calibrated competition plates",
     ],
-    metric: { value: "2,400kg", label: "Plate weight on floor" },
+    metric: { value: "2,400kg", label: "Plate weight on the floor" },
     image:
-      "https://picsum.photos/seed/carve-strength/1600/1100",
+      "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=1600&q=80",
     accent: "#ff6b00",
   },
   {
     tag: "02 / Cardio",
     title: "Engine Room",
-    subtitle: "Zone 2 · VO₂ · Conditioning",
+    subtitle: "Zone 2 · VO₂ Max · Conditioning",
     bullets: [
-      "Assault bikes & ski ergs",
-      "Heart-rate guided sessions",
-      "Lactate-threshold testing",
+      "Assault bikes, ski ergs, rowers and a 30-meter sled track",
+      "Heart-rate guided sessions with on-screen zone display",
+      "Quarterly lactate-threshold testing for serious athletes",
     ],
     metric: { value: "180 BPM", label: "Average peak in class" },
     image:
-      "https://picsum.photos/seed/carve-cardio/1600/1100",
-    accent: "#c6ff00",
+      "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1600&q=80",
+    accent: "#ff3d00",
   },
   {
     tag: "03 / HIIT",
     title: "Burn Protocol",
     subtitle: "Tabata · AMRAP · EMOM",
     bullets: [
-      "45-minute group sweat",
-      "Functional movement focus",
-      "Beginner & advanced lanes",
+      "45-minute group sweat — no two sessions the same",
+      "Functional movement focus with regressions for every level",
+      "Beginner & advanced lanes running side by side",
     ],
     metric: { value: "650 kcal", label: "Average burn per session" },
     image:
-      "https://picsum.photos/seed/carve-hiit/1600/1100",
-    accent: "#ff3d00",
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1600&q=80",
+    accent: "#ff6b00",
   },
   {
     tag: "04 / Combat",
     title: "Strike Lab",
     subtitle: "Boxing · Muay Thai · Kickboxing",
     bullets: [
-      "Pad work with coaches",
-      "Bag floor & ring",
-      "Tactical conditioning",
+      "Pad work with national-level coaches",
+      "Twelve heavy bags, double-end bags and a full-size ring",
+      "Tactical conditioning circuits between rounds",
     ],
-    metric: { value: "12 bags", label: "Plus a full-size ring" },
+    metric: { value: "12 bags", label: "Plus a full-size training ring" },
     image:
-      "https://picsum.photos/seed/carve-combat/1600/1100",
-    accent: "#ff6b00",
+      "https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=1600&q=80",
+    accent: "#ff3d00",
   },
   {
     tag: "05 / Mobility",
     title: "Quiet Power",
     subtitle: "Yoga · Stretch · Recovery",
     bullets: [
-      "Heated mobility studio",
-      "Sound bath & breathwork",
-      "1:1 movement screens",
+      "Heated mobility studio for deep tissue work",
+      "Sound bath, breathwork and guided meditation",
+      "1:1 movement screens with our physio team",
     ],
     metric: { value: "24/7", label: "Recovery zone access" },
     image:
-      "https://picsum.photos/seed/carve-yoga/1600/1100",
-    accent: "#c6ff00",
+      "https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=1600&q=80",
+    accent: "#ff6b00",
   },
 ];
 
@@ -152,7 +152,7 @@ function Nav() {
         </nav>
         <a
           href="#join"
-          className="rounded-full bg-green-400 px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-black transition hover:bg-green-300"
+          className="rounded-full bg-[#ff6b00] px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-black transition hover:bg-[#ff3d00] hover:text-white"
         >
           Join Now
         </a>
@@ -199,45 +199,55 @@ function Hero() {
           className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-3 py-1 text-[10px] uppercase tracking-[0.3em] text-white/70"
           style={{ fontFamily: "var(--font-v3-mono)" }}
         >
-          <span className="h-1.5 w-1.5 rounded-full bg-green-400" />
+          <span className="h-1.5 w-1.5 rounded-full bg-[#ff6b00]" />
           Open 24 / 7 · Vasundhara
         </motion.span>
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: "easeOut", delay: 0.1 }}
-          className="mt-6 max-w-4xl text-6xl font-bold leading-[0.95] tracking-tight sm:text-7xl md:text-8xl"
+          className="mt-8 max-w-5xl text-7xl font-bold leading-[0.92] tracking-tight sm:text-8xl md:text-9xl"
           style={{ fontFamily: "var(--font-v3-display)" }}
         >
           Train like
           <br />
-          you <span className="text-green-400">mean it.</span>
+          you{" "}
+          <span
+            className="bg-clip-text text-transparent"
+            style={{
+              backgroundImage:
+                "linear-gradient(90deg,#ff6b00 0%,#ff3d00 60%,#ffb070 100%)",
+            }}
+          >
+            mean it.
+          </span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.25 }}
-          className="mt-6 max-w-xl text-base text-white/70 sm:text-lg"
+          className="mt-8 max-w-2xl text-lg leading-relaxed text-white/75 sm:text-xl"
         >
           Five disciplines. One floor. Carve&nbsp;24×7 is a coach-led strength
-          and conditioning club in Vasundhara, built for people who show up.
+          and conditioning club in Vasundhara, built for people who show up —
+          and stay long after the music stops.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-          className="mt-10 flex flex-wrap items-center gap-4"
+          className="mt-12 flex flex-wrap items-center gap-4"
         >
           <a
             href="#join"
-            className="group inline-flex items-center gap-3 rounded-full bg-green-400 px-7 py-4 text-sm font-semibold uppercase tracking-[0.2em] text-black transition hover:bg-green-300"
+            className="group inline-flex items-center gap-3 rounded-full bg-[#ff6b00] px-8 py-5 text-sm font-semibold uppercase tracking-[0.2em] text-black transition hover:bg-[#ff3d00] hover:text-white"
           >
             Join Now
             <span className="transition group-hover:translate-x-1">→</span>
           </a>
           <a
             href="#classes"
-            className="inline-flex items-center gap-3 rounded-full border border-white/20 px-7 py-4 text-sm font-semibold uppercase tracking-[0.2em] text-white transition hover:border-white hover:bg-white/5"
+            className="inline-flex items-center gap-3 rounded-full border border-white/20 px-8 py-5 text-sm font-semibold uppercase tracking-[0.2em] text-white transition hover:border-white hover:bg-white/5"
           >
             See classes
           </a>
@@ -282,7 +292,7 @@ function HorizontalClasses() {
         <div className="pointer-events-none absolute inset-x-0 top-0 z-20 flex items-center justify-between px-8 pt-24 sm:px-12">
           <div>
             <p
-              className="text-[10px] uppercase tracking-[0.4em] text-green-400"
+              className="text-[10px] uppercase tracking-[0.4em] text-[#ff6b00]"
               style={{ fontFamily: "var(--font-v3-mono)" }}
             >
               — Disciplines
@@ -319,7 +329,7 @@ function HorizontalClasses() {
         <div className="pointer-events-none absolute inset-x-0 bottom-10 z-20 mx-auto h-[2px] w-[min(80vw,900px)] origin-left overflow-hidden bg-white/10">
           <motion.div
             style={{ scaleX: progressScale, transformOrigin: "left" }}
-            className="h-full w-full bg-green-400"
+            className="h-full w-full bg-[#ff6b00]"
           />
         </div>
       </div>
@@ -333,12 +343,12 @@ function Card({ card, index }: { card: ClassCard; index: number }) {
       className="relative flex h-full w-screen flex-shrink-0 items-center justify-center px-8 sm:px-16"
       aria-label={`${card.tag} — ${card.title}`}
     >
-      <div className="relative flex h-[78vh] w-full max-w-6xl flex-col overflow-hidden rounded-3xl border border-white/10 bg-zinc-950 shadow-[0_40px_120px_-30px_rgba(0,0,0,0.9)] sm:flex-row">
-        <div className="relative h-1/2 w-full sm:h-full sm:w-3/5">
+      <div className="relative flex h-[82vh] w-full max-w-[1500px] flex-col overflow-hidden rounded-3xl border border-white/10 bg-zinc-950 shadow-[0_40px_120px_-30px_rgba(0,0,0,0.9)] sm:flex-row">
+        <div className="relative h-1/2 w-full sm:h-full sm:w-1/2">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={card.image}
-            alt={`${card.title} training environment at Carve 24x7`}
+            alt={`${card.title} — ${card.subtitle} training at Carve 24x7`}
             className="absolute inset-0 h-full w-full object-cover"
             loading={index === 0 ? "eager" : "lazy"}
           />
@@ -352,7 +362,7 @@ function Card({ card, index }: { card: ClassCard; index: number }) {
           />
           <div
             aria-hidden
-            className="absolute -bottom-1 left-0 right-0 h-32 sm:bottom-0 sm:left-auto sm:right-0 sm:top-0 sm:h-full sm:w-32"
+            className="absolute -bottom-1 left-0 right-0 h-32 sm:bottom-0 sm:left-auto sm:right-0 sm:top-0 sm:h-full sm:w-40"
             style={{
               background:
                 "linear-gradient(to top, rgba(9,9,11,1), transparent)",
@@ -360,34 +370,45 @@ function Card({ card, index }: { card: ClassCard; index: number }) {
           />
           <div className="absolute left-6 top-6 sm:left-8 sm:top-8">
             <span
-              className="rounded-full border border-white/30 bg-black/50 px-3 py-1 text-[10px] uppercase tracking-[0.3em] text-white backdrop-blur"
+              className="rounded-full border border-white/30 bg-black/50 px-4 py-1.5 text-xs uppercase tracking-[0.3em] text-white backdrop-blur"
               style={{ fontFamily: "var(--font-v3-mono)" }}
             >
               {card.tag}
             </span>
           </div>
+          <div className="absolute bottom-8 left-8 right-8 sm:bottom-12 sm:left-12 sm:right-12">
+            <p
+              className="text-6xl font-bold uppercase leading-[0.85] tracking-tight text-white/90 sm:text-7xl md:text-8xl"
+              style={{
+                fontFamily: "var(--font-v3-display)",
+                WebkitTextStroke: "1px rgba(255,255,255,0.15)",
+              }}
+            >
+              0{index + 1}
+            </p>
+          </div>
         </div>
 
-        <div className="relative flex w-full flex-1 flex-col justify-between gap-8 p-8 sm:w-2/5 sm:p-12">
+        <div className="relative flex w-full flex-1 flex-col justify-between gap-10 p-10 sm:w-1/2 sm:p-14">
           <div>
             <p
-              className="text-xs uppercase tracking-[0.3em]"
+              className="text-sm uppercase tracking-[0.3em]"
               style={{ color: card.accent, fontFamily: "var(--font-v3-mono)" }}
             >
               {card.subtitle}
             </p>
             <h3
-              className="mt-3 text-4xl font-bold leading-[1.02] tracking-tight sm:text-5xl"
+              className="mt-4 text-6xl font-bold leading-[0.95] tracking-tight sm:text-7xl"
               style={{ fontFamily: "var(--font-v3-display)" }}
             >
               {card.title}
             </h3>
-            <ul className="mt-6 space-y-2.5 text-sm text-white/75">
+            <ul className="mt-8 space-y-4 text-base leading-relaxed text-white/80 sm:text-lg">
               {card.bullets.map((b) => (
-                <li key={b} className="flex items-start gap-3">
+                <li key={b} className="flex items-start gap-4">
                   <span
                     aria-hidden
-                    className="mt-2 inline-block h-1.5 w-1.5 flex-shrink-0 rounded-full"
+                    className="mt-3 inline-block h-2 w-2 flex-shrink-0 rounded-full"
                     style={{ background: card.accent }}
                   />
                   <span>{b}</span>
@@ -395,16 +416,16 @@ function Card({ card, index }: { card: ClassCard; index: number }) {
               ))}
             </ul>
           </div>
-          <div className="flex items-end justify-between gap-6 border-t border-white/10 pt-6">
+          <div className="flex items-end justify-between gap-6 border-t border-white/10 pt-8">
             <div>
               <p
-                className="text-3xl font-bold tracking-tight sm:text-4xl"
-                style={{ fontFamily: "var(--font-v3-display)" }}
+                className="text-5xl font-bold tracking-tight sm:text-6xl"
+                style={{ fontFamily: "var(--font-v3-display)", color: card.accent }}
               >
                 {card.metric.value}
               </p>
               <p
-                className="mt-1 text-[10px] uppercase tracking-[0.3em] text-white/50"
+                className="mt-2 text-xs uppercase tracking-[0.3em] text-white/60"
                 style={{ fontFamily: "var(--font-v3-mono)" }}
               >
                 {card.metric.label}
@@ -412,7 +433,8 @@ function Card({ card, index }: { card: ClassCard; index: number }) {
             </div>
             <a
               href="#join"
-              className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-[11px] font-semibold uppercase tracking-[0.25em] text-white transition hover:border-white hover:bg-white/5"
+              className="inline-flex items-center gap-2 rounded-full border px-6 py-4 text-xs font-semibold uppercase tracking-[0.25em] text-white transition hover:bg-white/5"
+              style={{ borderColor: card.accent, color: card.accent }}
             >
               Try class
               <span aria-hidden>→</span>
@@ -436,7 +458,7 @@ function Footer() {
           className="max-w-3xl"
         >
           <p
-            className="text-[10px] uppercase tracking-[0.4em] text-green-400"
+            className="text-[10px] uppercase tracking-[0.4em] text-[#ff6b00]"
             style={{ fontFamily: "var(--font-v3-mono)" }}
           >
             — Ready?
@@ -446,7 +468,15 @@ function Footer() {
             style={{ fontFamily: "var(--font-v3-display)" }}
           >
             Walk in.{" "}
-            <span className="text-green-400">Walk out stronger.</span>
+            <span
+              className="bg-clip-text text-transparent"
+              style={{
+                backgroundImage:
+                  "linear-gradient(90deg,#ff6b00 0%,#ff3d00 60%,#ffb070 100%)",
+              }}
+            >
+              Walk out stronger.
+            </span>
           </h2>
           <p className="mt-6 max-w-xl text-base text-white/70 sm:text-lg">
             Book a free intro session and we&rsquo;ll show you the floor. No
@@ -490,7 +520,7 @@ function Footer() {
           <div className="flex flex-col items-start gap-4 sm:items-end">
             <a
               href="tel:+918750001034"
-              className="inline-flex items-center gap-3 rounded-full bg-green-400 px-7 py-4 text-sm font-semibold uppercase tracking-[0.2em] text-black transition hover:bg-green-300"
+              className="inline-flex items-center gap-3 rounded-full bg-[#ff6b00] px-7 py-4 text-sm font-semibold uppercase tracking-[0.2em] text-black transition hover:bg-[#ff3d00] hover:text-white"
             >
               Book intro
               <span aria-hidden>→</span>
