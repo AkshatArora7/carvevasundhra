@@ -31,7 +31,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <a href={`tel:${site.phones[0].replace(/\s/g, "")}`} className="btn-primary text-sm hidden sm:inline-flex">
+        <a href={`tel:${site.phones[0].replace(/\s/g, "")}`} className="btn-primary text-xs px-4 py-2 sm:text-sm sm:px-5 sm:py-2.5">
           Join Now
         </a>
       </div>

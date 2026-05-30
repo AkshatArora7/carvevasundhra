@@ -190,11 +190,12 @@
 }
 .heroTitle {
   font-family: var(--font-v1-display);
-  font-size: clamp(3.5rem, 13vw, 11rem);
+  font-size: clamp(2.25rem, 13vw, 11rem);
   line-height: 0.9;
   letter-spacing: -0.02em;
   margin: 1rem 0 1.5rem;
   text-transform: uppercase;
+  word-break: break-word;
 }
 .heroLede {
   max-width: 36ch;
