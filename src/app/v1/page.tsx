@@ -9,6 +9,7 @@ import {
   type CSSProperties,
 } from "react";
 import s from "./v1.module.css";
+import CraftedBy from "@/components/CraftedBy";
 
 // ---------------- mock data ----------------
 type ClassItem = {
@@ -392,6 +393,7 @@ export default function V1Page() {
         />
         <p>© {year} CARVE 24×7 · ALL RIGHTS RESERVED.</p>
         <p className={s.footAddr}>SECTOR 5, VASUNDHARA · GHAZIABAD</p>
+        <CraftedBy />
       </footer>
     </div>
   );

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "@/components/Logo";
+import CraftedBy from "@/components/CraftedBy";
 import { site } from "@/lib/site";
 
 export default function Footer() {
@@ -79,6 +80,9 @@ export default function Footer() {
           <p>
             {site.address.line1}, {site.address.city} · {site.phones[0]}
           </p>
+        </div>
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-6">
+          <CraftedBy />
         </div>
       </div>
     </footer>

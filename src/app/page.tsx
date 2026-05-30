@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "@/components/Logo";
+import CraftedBy from "@/components/CraftedBy";
 import { site } from "@/lib/site";
 
 export const metadata = {
@@ -114,6 +115,7 @@ export default function ChooserPage() {
       <footer className="relative z-10 border-t border-white/10 py-6 text-center text-xs text-white/40">
         © {new Date().getFullYear()} {site.name} · {site.address.line2},{" "}
         {site.address.city}
+        <CraftedBy />
       </footer>
     </main>
   );

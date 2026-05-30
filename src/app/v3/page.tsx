@@ -3,6 +3,7 @@
 import { useRef, useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
+import CraftedBy from "@/components/CraftedBy";
 
 type ClassCard = {
   tag: string;
@@ -540,6 +541,7 @@ function Footer() {
         >
           © {new Date().getFullYear()} Carve 24×7 · V3 Scroll Edition
         </p>
+        <CraftedBy align="left" className="mt-6" />
       </div>
     </section>
   );
