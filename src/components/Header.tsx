@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import Logo from "@/components/Logo";
 import { site } from "@/lib/site";
 
 export default function Header() {
@@ -16,14 +16,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 backdrop-blur-md bg-black/60 border-b border-white/5">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2" aria-label="Carve 24x7 home">
-          <Image
-            src="/logo.png"
-            alt="Carve 24x7 — Cut. Shape. Sculpt."
-            width={160}
-            height={48}
-            priority
-            className="h-10 w-auto"
-          />
+          <Logo className="h-10 w-32 sm:w-36" variant="gradient" />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-8 text-sm text-zinc-300">
