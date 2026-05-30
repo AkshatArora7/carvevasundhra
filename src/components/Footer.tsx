@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/lib/site";
 
@@ -26,13 +27,14 @@ export default function Footer() {
     <footer className="mt-10 border-t border-white/10 bg-black/60">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 grid lg:grid-cols-4 gap-10">
         <div className="lg:col-span-2">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-gradient-to-br from-[#ff3d00] to-[#ff7a00] text-black font-display text-xl">
-              C
-            </span>
-            <span className="font-display text-2xl tracking-wider">
-              CARVE <span className="text-[#ff7a00]">24×7</span>
-            </span>
+          <Link href="/" className="flex items-center gap-2" aria-label="Carve 24x7 home">
+            <Image
+              src="/logo.png"
+              alt="Carve 24x7 — Cut. Shape. Sculpt."
+              width={180}
+              height={54}
+              className="h-12 w-auto"
+            />
           </Link>
           <p className="mt-4 text-zinc-400 max-w-md text-sm leading-relaxed">
             {site.shortDesc}

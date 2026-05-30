@@ -39,6 +39,10 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: site.name }],
   alternates: { canonical: "/" },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
   openGraph: {
     type: "website",
     locale: "en_IN",
