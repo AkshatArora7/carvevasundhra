@@ -72,7 +72,7 @@ export default function ChooserPage() {
         </p>
       </section>
 
-      <section className="relative z-10 mx-auto grid max-w-6xl grid-cols-1 gap-6 px-6 pb-24 md:grid-cols-2">
+      <section className="relative z-10 mx-auto grid max-w-7xl grid-cols-1 gap-6 px-6 pb-24 md:grid-cols-3">
         <DemoCard
           href="/v1"
           tag="V1 · Brutalist"
@@ -96,6 +96,18 @@ export default function ChooserPage() {
             "Schema.org HealthClub + sitemap",
           ]}
           accent="#ff3d00"
+        />
+        <DemoCard
+          href="/v3"
+          tag="V3 · Scroll"
+          title="Train Like You Mean It"
+          description="Agency-grade scrollytelling: a sticky section pinned to the viewport while five class cards slide horizontally on vertical scroll."
+          bullets={[
+            "Framer Motion scroll-linked transforms",
+            "Hero video · horizontal classes · CTA",
+            "Neon-green accent, Space Grotesk display",
+          ]}
+          accent="#c6ff00"
         />
       </section>
 
